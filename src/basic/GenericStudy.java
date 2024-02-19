@@ -17,8 +17,7 @@ public class GenericStudy {
         return value;
     }
 
-    static void testMethod3(List<String> stringList){
-    }
+
 
     public static void main(String[] args) {
 
@@ -36,14 +35,14 @@ public class GenericStudy {
 
 
         // [ Type Inference 3 ]
-        // - Generic 클래스 생성자 호출 시 Type Argument -> <> 로 대체 가능
+        // - Generic 클래스 생성자 호출 시 "Type Argument -> <> 로 대체 가능"
         // - public class ArrayList<E> extends AbstractList<E> implements ...
         ArrayList<String> strings = new ArrayList<String>();
         ArrayList<String> strings2 = new ArrayList<>();
 
 
         // [ Target Type ]
-        // - 표현식 위치(컨텍스트)에 따라서 Type 을 추론
+        // - "표현식 위치(컨텍스트)에 따라서 Type 을 추론"
         try {
             // List<String> 추론
             List<String> myStrList = Collections.emptyList();
@@ -66,9 +65,10 @@ public class GenericStudy {
 
         // [ Target Type 2 ]
         // - java 8 이후 지원
-        // - Method의 Parameter 타입도 함께 체크해서 추론함
+        // - "Method의 Parameter 타입도 함께 체크해서 추론함"
         testMethod3(Collections.emptyList()); // method parameter Type -> List<String>
 
     }
 
+    static void testMethod3(List<String> stringList){}
 }

@@ -6,7 +6,7 @@ import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 
 /**
- * (설명)
+ * Reflection Constructor 관련 실습
  * Created by aoc55.soft@gmail.com
  */
 public class ReflectionConstructor {
